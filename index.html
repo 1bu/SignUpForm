@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <p>Photo by Dmitry Korkhau</p>
+        </div>
+        <div class="form-container">
+            <p class="form-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum enim laudantium, ullam soluta neque unde odit sed reiciendis, quisquam saepe porro aliquam consequuntur. Facere recusandae fugit cum ad similique accusamus.
+            </p>
+            <div class="form-body">
+                <h2>Let's do this!</h2>
+                <form id="formData"  onsubmit="return false">
+                    <div class="form">
+                    <div>
+                        <label for="first-name" id="">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div>                    
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" name="phone-number" id="phone-number" required>                   
+                    </div>
+                    <div class="check">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>                   
+                    </div>
+                    <div class="check">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </div>
+                    </div>
+                </form> 
+            </div>
+
+            <div class="form-footer">
+                <button id="btn" type="submit" form="formData">Create Account</button>
+                <p>Already have an account? <span>Log in</span></p>
+            </div>    
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
